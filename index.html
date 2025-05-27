@@ -4,49 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arthur Neirynck - Digitaal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f4;
+    :root {
+      --primary: #2563eb;
+      --secondary: #1e293b;
+      --background: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border-radius: 12px;
+    }
+
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background: white;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    nav {
-      background: #333;
-      color: white;
-      padding: 10px 20px;
-    }
-    nav h1 {
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 0;
       margin: 0;
     }
+
+    nav {
+      background-color: var(--secondary);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
     section {
-      margin-top: 30px;
+      background-color: var(--card-bg);
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+      color: var(--primary);
+    }
+
     a {
-      color: #0066cc;
+      color: var(--primary);
       text-decoration: none;
+      transition: all 0.3s ease;
     }
+
+    a:hover {
+      text-decoration: underline;
+      color: #1d4ed8;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
     footer {
       text-align: center;
+      color: var(--muted);
       margin-top: 40px;
-      color: #777;
+      font-size: 0.9rem;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        font-size: 1.2rem;
+      }
+      section {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
   <nav>
-    <h1>Arthur Neirynck - Portfolio</h1>
+    Arthur Neirynck - Portfolio
   </nav>
+
   <div class="container">
     <section>
       <h2>📌 Over mij</h2>
@@ -57,6 +110,14 @@
       <h2>📄 CV</h2>
       <p>Wil je meer weten over mijn opleidingen, ervaringen en vaardigheden in één overzicht?</p>
       <p><a href="docs/CV Arthur Neirynck.pdf" target="_blank">📄 Download mijn CV (PDF)</a></p>
+    </section>
+
+    <section>
+      <h2>📫 Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:arthur.neirynck@hotmail.com">arthur.neirynck@hotmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/arthur-neirynck-9533992a1/" target="_blank">linkedin.com/in/arthur-neirynck-9533992a1</a></li>
+      </ul>
     </section>
 
     <section>
@@ -71,32 +132,6 @@
             <li>Scripting, installatie en evaluatie</li>
           </ul>
         </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🛠️ Skills</h2>
-      <ul>
-        <li>Windows Server, Active Directory</li>
-        <li>PowerShell, scripting</li>
-        <li>RMM-oplossingen (N-Able, Datto)</li>
-        <li>Monitoring en automatisering</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📁 Projecten</h2>
-      <ul>
-        <li><a href="#">Link naar GitHub project 1</a></li>
-        <li><a href="#">Link naar GitHub project 2</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>📫 Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:arthur.neirynck@hotmail.com">arthur.neirynck@hotmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/arthur-neirynck-9533992a1/" target="_blank">linkedin.com/in/arthur-neirynck-9533992a1</a></li>
       </ul>
     </section>
 
